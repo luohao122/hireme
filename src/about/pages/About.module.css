@@ -1,0 +1,9 @@
+.About {
+  padding-top: 70px;
+  position: relative;
+  z-index: 5;
+}
+
+.AboutBox {
+  padding: 57px 50px 15px 50px;
+}

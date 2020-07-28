@@ -1,0 +1,12 @@
+.NavLinks {
+  align-items: "center";
+  height: "100%";
+  justify-content: "center";
+  margin: 0;
+  padding: 0;
+  width: "100%";
+}
+
+.NavLinks li {
+  margin: 0 1.5rem;
+}
