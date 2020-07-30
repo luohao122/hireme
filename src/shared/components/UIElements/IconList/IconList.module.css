@@ -2,3 +2,7 @@
   background-color: #e8676b;
   padding: 15px 0;
 }
+
+.IsTransparent {
+  background-color: transparent;
+}

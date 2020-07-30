@@ -5,7 +5,9 @@ import classes from "./IconList.module.css";
 const IconList = (props) => {
   return (
     <div
-      className={classes.IconList}
+      className={`${classes.IconList} ${
+        props.isTransparent ? classes.IsTransparent : null
+      }`}
       style={
         props.hasPositionAbsolute
           ? { position: "absolute", width: "100%", bottom: 0, left: 0 }

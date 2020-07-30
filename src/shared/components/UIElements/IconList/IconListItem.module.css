@@ -26,3 +26,11 @@
   font-size: 20px;
   display: block;
 }
+
+.TextDanger {
+  color: #e8676b;
+}
+
+.IconLarge a i {
+  font-size: 30px;
+}
