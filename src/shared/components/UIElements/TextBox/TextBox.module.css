@@ -1,0 +1,19 @@
+.TextBox {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 950px;
+}
+
+.TextBox p {
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.TextBox a {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px;
+  letter-spacing: 0.05rem;
+  padding: 21px 55px;
+  text-transform: uppercase;
+}

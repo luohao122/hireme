@@ -9,4 +9,35 @@
 
 .NavLinks li {
   margin: 0 1.5rem;
+  position: relative;
+}
+
+.NavLinks li a {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.NavLinks li a:hover {
+  text-decoration: none;
+}
+
+.NavLinks li a::after {
+  background-color: #e8676b;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 3px;
+  border-radius: 10px;
+  transition: width 0.2s ease-out;
+  width: 0;
+}
+
+.NavLinks li:hover a::after {
+  width: 100% !important;
+}
+
+.NavLinks .NavLinkActive::after {
+  width: 100% !important;
 }

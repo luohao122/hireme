@@ -3,7 +3,11 @@ import React from "react";
 import classes from "./Card.module.css";
 
 const Card = (props) => {
-  return <div className={classes.Card}>{props.children}</div>;
+  return (
+    <section id={props.id} className={classes.CardSection}>
+      <div className={classes.Card}>{props.children}</div>
+    </section>
+  );
 };
 
 export default Card;
