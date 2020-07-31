@@ -3,3 +3,62 @@
   width: 100%;
   z-index: 6;
 }
+
+.MainNav p {
+  font-size: 16px;
+}
+
+.MainNavigationMenuButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 2.5rem;
+  justify-content: space-around;
+  margin-right: 2rem;
+  width: 3rem;
+}
+
+.MainNavigationMenuButton span {
+  background-color: #fff;
+  display: block;
+  height: 2px;
+  width: 2.5rem;
+}
+
+.MainNavigationHeaderNav {
+  display: none;
+}
+
+.MainHeaderDrawerNav {
+  border-top: 1px solid #dedede;
+  height: 100%;
+  padding: 5px 0;
+}
+
+.SideDrawerCloseButton {
+  border-color: transparent;
+  border-radius: 0px;
+  background-color: #ff4f55;
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  right: -49px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .MainNavigationMenuButton {
+    display: none;
+  }
+
+  .MainNavigationHeaderNav {
+    display: block;
+  }
+}

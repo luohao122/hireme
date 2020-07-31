@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react";
 
 import classes from "./Button.module.css";
@@ -43,6 +44,16 @@ const Button = (props) => {
       {props.children}
     </button>
   );
+};
+
+Button.propTypes = {
+  size: PropTypes.string,
+  type: PropTypes.string,
+  onClick: PropTypes.func,
+  disabled: PropTypes.bool,
+  to: PropTypes.string,
+  exact: PropTypes.bool,
+  href: PropTypes.string,
 };
 
 export default Button;

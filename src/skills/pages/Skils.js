@@ -10,6 +10,11 @@ const Skills = (props) => {
     <Card id="skills">
       <div className={classes.SkillsBox}>
         <div className="row">
+          <div className="col-sm-12">
+            <h2 className="mb-3">Professional Skills</h2>
+          </div>
+        </div>
+        <div className="row">
           <div className="col-sm-6">
             <ProgressBar title="HTML" width="90" />
           </div>

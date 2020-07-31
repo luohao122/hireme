@@ -7,11 +7,17 @@
 }
 
 .CardSection {
-  padding-top: 70px;
+  padding-top: 0;
   position: relative;
   z-index: 5;
 }
 
 .CardBox {
   padding: 57px 50px 15px 50px;
+}
+
+@media (min-width: 768px) {
+  .CardSection {
+    padding-top: 70px;
+  }
 }

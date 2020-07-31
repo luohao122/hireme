@@ -6,6 +6,7 @@ import TextBox from "./shared/components/UIElements/TextBox/TextBox";
 import Button from "./shared/components/UIElements/Button/Button";
 import About from "./about/pages/About";
 import Skills from "./skills/pages/Skils";
+import Footer from "./shared/components/UIElements/Footer/Footer";
 import "./App.css";
 
 const App = () => {
@@ -15,7 +16,6 @@ const App = () => {
       <main className="App">
         <div className="content">
           <div className="container">
-            {/* <About /> */}
             <Switch>
               <Route path="/" exact>
                 <About />
@@ -30,10 +30,11 @@ const App = () => {
                 <Skills />
               </Route>
             </Switch>
-            {/* <Skills /> */}
             <TextBox>
               <p className="mb-4">
-                <Button href="/">Download Resume</Button>
+                <Button href="https://drive.google.com/file/d/1GvufqbntjMFzsXDocWBsooQYtWKc44Fk/view?usp=sharing">
+                  Download Resume
+                </Button>
               </p>
               <p>
                 Hello! I'm Jake Luong. Mid Level Web Developer specializing in
@@ -45,6 +46,7 @@ const App = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </Router>
   );
 };

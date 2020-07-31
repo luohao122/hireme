@@ -21,6 +21,9 @@ const ProgressBar = (props) => {
     } else {
       clearInterval(intervalId.current);
     }
+    return () => {
+      clearInterval(intervalId.current);
+    };
   }, [barWidth, width]);
 
   return (

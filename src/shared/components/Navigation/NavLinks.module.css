@@ -1,18 +1,21 @@
 .NavLinks {
-  align-items: "center";
-  height: "100%";
-  justify-content: "center";
+  align-items: start;
+  height: 100%;
+  flex-direction: column;
+  justify-content: normal;
   margin: 0;
   padding: 0;
-  width: "100%";
+  width: 100%;
 }
 
 .NavLinks li {
-  margin: 0 1.5rem;
+  margin: 1rem;
   position: relative;
+  width: 100%;
 }
 
 .NavLinks li a {
+  color: #3d4451;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -35,9 +38,34 @@
 }
 
 .NavLinks li:hover a::after {
-  width: 100% !important;
+  width: 20% !important;
 }
 
 .NavLinks .NavLinkActive::after {
-  width: 100% !important;
+  width: 20% !important;
+}
+
+@media (min-width: 768px) {
+  .NavLinks {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .NavLinks li {
+    margin: 0 1.5rem;
+    width: auto;
+  }
+
+  .NavLinks li a {
+    color: #fff;
+  }
+
+  .NavLinks li:hover a::after {
+    width: 100% !important;
+  }
+
+  .NavLinks .NavLinkActive::after {
+    width: 100% !important;
+  }
 }

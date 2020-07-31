@@ -7,7 +7,7 @@ const IconList = (props) => {
     <div
       className={`${classes.IconList} ${
         props.isTransparent ? classes.IsTransparent : null
-      }`}
+      } ${props.isCentered ? classes.isCentered : null}`}
       style={
         props.hasPositionAbsolute
           ? { position: "absolute", width: "100%", bottom: 0, left: 0 }

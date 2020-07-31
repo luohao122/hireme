@@ -5,26 +5,26 @@ import IconListItem from "../../shared/components/UIElements/IconList/IconListIt
 const ProfileSocialsBar = (props) => {
   return (
     <IconList>
-      <IconListItem size="large">
-        <a href="https://www.linkedin.com/in/jake-luong-b710ba153/">
-          <i className="fab fa-linkedin"></i>
-        </a>
-      </IconListItem>
-      <IconListItem size="large">
-        <a href="https://github.com/luohao122">
-          <i className="fab fa-github"></i>
-        </a>
-      </IconListItem>
-      <IconListItem size="large">
-        <a href="https://www.hackerrank.com/luohao937">
-          <i className="fab fa-hackerrank"></i>
-        </a>
-      </IconListItem>
-      <IconListItem size="large">
-        <a href="https://www.facebook.com/">
-          <i className="fab fa-facebook-f"></i>
-        </a>
-      </IconListItem>
+      <IconListItem
+        size="large"
+        href="https://www.linkedin.com/in/jake-luong-b710ba153/"
+        iconClass="fab fa-linkedin"
+      />
+      <IconListItem
+        size="large"
+        href="https://github.com/luohao122"
+        iconClass="fab fa-github"
+      />
+      <IconListItem
+        size="large"
+        href="https://www.hackerrank.com/luohao937"
+        iconClass="fab fa-hackerrank"
+      />
+      <IconListItem
+        size="large"
+        href="https://www.facebook.com/"
+        iconClass="fab fa-facebook-f"
+      />
     </IconList>
   );
 };

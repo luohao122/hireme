@@ -6,3 +6,7 @@
 .IsTransparent {
   background-color: transparent;
 }
+
+.isCentered {
+  text-align: center;
+}
