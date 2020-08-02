@@ -1,0 +1,118 @@
+.ContactBox {
+  padding: 44px 30px 10px;
+}
+
+.ContactBubbleBox {
+  animation: bubble 1s, shake 0.6s ease-out;
+  position: absolute;
+  top: -48px;
+  right: 130px;
+}
+
+.ContactBoxDesktop {
+  display: none;
+}
+
+.ContactBoxMobile {
+  display: block;
+  height: 250px;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.ContactBoxInner {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 100%;
+  text-align: center;
+}
+
+.ContactBoxCardMobile {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.ContactInfo i {
+  color: #e6653b;
+}
+
+.ContactInfo p {
+  font-size: 20px;
+  color: #3d4451;
+}
+
+.ContactJobSection {
+  margin-bottom: 1rem;
+}
+
+.ContactJobSection p {
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.ContactJobSection i {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .ContactBoxDesktop {
+    display: block;
+  }
+
+  .ContactBoxMobile {
+    display: none;
+  }
+}
+
+@media (max-width: 484px) {
+  .ContactInfo {
+    display: none;
+  }
+}
+
+@keyframes bubble {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    overflow: 1;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(1px);
+  }
+  10% {
+    transform: translateX(-1px);
+  }
+  20% {
+    transform: translateX(2px);
+  }
+  30% {
+    transform: translateX(-2px);
+  }
+  40% {
+    transform: translateX(3px);
+  }
+  50% {
+    transform: translateX(-3px);
+  }
+  60% {
+    transform: translateX(4px);
+  }
+  70% {
+    transform: translateX(-4px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  90% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,16 @@
+.FlipCardFrontContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.FlipCardFrontContainer i {
+  color: #fff;
+}
+
+.FlipCardFrontContainer p {
+  font-size: 30px;
+  color: #fff;
+}

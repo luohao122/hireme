@@ -5,6 +5,7 @@ import MainNavigation from "./shared/components/Navigation/MainNavigation";
 import TextBox from "./shared/components/UIElements/TextBox/TextBox";
 import Button from "./shared/components/UIElements/Button/Button";
 import About from "./about/pages/About";
+import Contact from "./contact/pages/Contact";
 import Skills from "./skills/pages/Skils";
 import Footer from "./shared/components/UIElements/Footer/Footer";
 import "./App.css";
@@ -27,7 +28,7 @@ const App = () => {
                 <Skills />
               </Route>
               <Route path="/contact" exact>
-                <Skills />
+                <Contact />
               </Route>
             </Switch>
             <TextBox>

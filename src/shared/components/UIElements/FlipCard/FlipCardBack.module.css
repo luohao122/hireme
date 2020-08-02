@@ -1,0 +1,42 @@
+.FlipCardBackContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.FlipCardBackLeft i {
+  color: #e6653b;
+}
+
+.FlipCardBackLeft p {
+  font-size: 20px;
+  color: #3d4451;
+}
+
+.FlipCardBackRight {
+  text-align: left;
+}
+
+.FlipCardBackRight p,
+.FlipCardBackRight i {
+  color: #3d4451;
+}
+
+.InforSection {
+  margin-bottom: 1rem;
+}
+
+.ContactInfo p:first-child {
+  margin-bottom: 0;
+}
+
+.FlipCardName {
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.FlipCardPosition {
+  font-size: 14px;
+}

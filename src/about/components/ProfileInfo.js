@@ -1,17 +1,14 @@
 import React from "react";
 
 import classes from "./ProfileInfo.module.css";
+import ChatBubble from "../../shared/components/UIElements/ChatBubble/ChatBubble";
 
 const ProfileInfo = (props) => {
   return (
     <div className={`${classes.ProfileInfo} text-left`}>
       <div className="mb-3">
         <div className="profile-bubble">
-          <span
-            className={`${classes.Label} text-uppercase position-relative d-inline-block`}
-          >
-            Hello
-          </span>
+          <ChatBubble text="Hello" />
         </div>
       </div>
       <h1>
