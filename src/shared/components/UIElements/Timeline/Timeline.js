@@ -26,7 +26,7 @@ const Timeline = (props) => {
       company: "Rubify Technology",
       content:
         "Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum",
-      image: "",
+      image: "/rubify.png",
     },
   ]);
 
@@ -39,8 +39,6 @@ const Timeline = (props) => {
           }`}
         >
           <div className="content">
-            <h2>{time.year}</h2>
-            <h5>{time.company}</h5>
             {time.image ? (
               <img
                 className="img-fluid"
@@ -49,6 +47,9 @@ const Timeline = (props) => {
                 title={time.company}
               />
             ) : null}
+            <h2>{time.year}</h2>
+            <h5>{time.company}</h5>
+
             <p>{time.content}</p>
           </div>
         </div>
