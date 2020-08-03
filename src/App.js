@@ -44,8 +44,8 @@ const App = () => {
               Javascript, HTML5, CSS3, Bootstrap.
             </p>
           </TextBox>
-          <Timeline />
         </div>
+        <Timeline />
       </main>
       <Footer />
     </Router>

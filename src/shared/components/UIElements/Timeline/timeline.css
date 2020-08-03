@@ -33,8 +33,8 @@
   height: 25px;
   right: -12px;
   background-color: white;
-  border: 4px solid #ff9f55;
-  top: 15px;
+  border: 4px solid #e8676b;
+  top: 20px;
   border-radius: 50%;
   z-index: 1;
 }
@@ -88,6 +88,19 @@
   background-color: white;
   position: relative;
   border-radius: 6px;
+}
+
+.timeline-year {
+  color: #e8676b;
+  font-size: 20px;
+}
+
+.timeline-title {
+  color: #878787;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
