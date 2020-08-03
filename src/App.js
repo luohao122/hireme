@@ -8,6 +8,7 @@ import About from "./about/pages/About";
 import Contact from "./contact/pages/Contact";
 import Skills from "./skills/pages/Skils";
 import Footer from "./shared/components/UIElements/Footer/Footer";
+import Timeline from "./shared/components/UIElements/Timeline/Timeline";
 import "./App.css";
 
 const App = () => {
@@ -15,36 +16,35 @@ const App = () => {
     <Router>
       <MainNavigation />
       <main className="App">
-        <div className="content">
-          <div className="container">
-            <Switch>
-              <Route path="/" exact>
-                <About />
-              </Route>
-              <Route path="/skills" exact>
-                <Skills />
-              </Route>
-              <Route path="/portfolio" exact>
-                <Skills />
-              </Route>
-              <Route path="/contact" exact>
-                <Contact />
-              </Route>
-            </Switch>
-            <TextBox>
-              <p className="mb-4">
-                <Button href="https://drive.google.com/file/d/1GvufqbntjMFzsXDocWBsooQYtWKc44Fk/view?usp=sharing">
-                  Download Resume
-                </Button>
-              </p>
-              <p>
-                Hello! I'm Jake Luong. Mid Level Web Developer specializing in
-                front end development. Experienced with all stages of the
-                development cycle for dynamic web projects. Well-versed in
-                Javascript, HTML5, CSS3, Bootstrap.
-              </p>
-            </TextBox>
-          </div>
+        <div className="container">
+          <Switch>
+            <Route path="/" exact>
+              <About />
+            </Route>
+            <Route path="/skills" exact>
+              <Skills />
+            </Route>
+            <Route path="/portfolio" exact>
+              <Skills />
+            </Route>
+            <Route path="/contact" exact>
+              <Contact />
+            </Route>
+          </Switch>
+          <TextBox>
+            <p className="mb-4">
+              <Button href="https://drive.google.com/file/d/1GvufqbntjMFzsXDocWBsooQYtWKc44Fk/view?usp=sharing">
+                Download Resume
+              </Button>
+            </p>
+            <p>
+              Hello! I'm Jake Luong. Mid Level Web Developer specializing in
+              front end development. Experienced with all stages of the
+              development cycle for dynamic web projects. Well-versed in
+              Javascript, HTML5, CSS3, Bootstrap.
+            </p>
+          </TextBox>
+          <Timeline />
         </div>
       </main>
       <Footer />
