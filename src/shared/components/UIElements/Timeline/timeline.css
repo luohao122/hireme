@@ -1,3 +1,8 @@
+.career-heading {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -42,10 +47,12 @@
 /* Place the container to the left */
 .timeline-left {
   left: 0;
+  animation: slideInLeft 1s ease-in-out;
 }
 
 /* Place the container to the right */
 .timeline-right {
+  animation: slideInRight 1s ease-in-out;
   left: 50%;
 }
 
@@ -92,7 +99,7 @@
 
 .timeline-year {
   color: #e8676b;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .timeline-title {

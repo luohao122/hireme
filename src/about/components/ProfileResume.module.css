@@ -1,15 +1,14 @@
-.TextBox {
-  margin: 0 auto;
-  margin-top: 30px;
+.ProfileResume {
+  margin: 50px auto;
   max-width: 950px;
 }
 
-.TextBox p {
+.ProfileResume p {
   font-weight: 300;
   font-size: 22px;
 }
 
-.TextBox a {
+.ProfileResume a {
   font-size: 15px;
   font-weight: bold;
   margin: 5px;

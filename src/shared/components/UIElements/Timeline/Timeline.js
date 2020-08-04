@@ -3,16 +3,16 @@ import React, { useState } from "react";
 import "./timeline.css";
 
 const Timeline = (props) => {
-  const [timeline, setTimeline] = useState([
+  const [timeline] = useState([
     {
       id: 1,
       year: "2019",
       company: "SEZAX VN",
       title: "Front End Engineer",
       company_summary:
-        "A traditional printing company in Japan. Sezax Corporation was founded in 1948",
+        "A traditional printing company in Japan. Sezax Corporation was founded in 1948.",
       job_summary:
-        "I joined Sezax as a mid level front end developer and has been working on ImageStore project, which is a content management system just like Google Drive ever since.",
+        "I joined Sezax as a mid level front end engineer and has been working on ImageStore project, which is a content management system just like Google Drive ever since.",
       image: "/sezax.jpg",
     },
     {
@@ -48,8 +48,12 @@ const Timeline = (props) => {
             time.id % 2 === 0 ? "right" : "left"
           }`}
         >
-          <div className="content">
-            <h2 className="timeline-year">{time.year}</h2>
+          <div
+            className={`content ${
+              time.id % 2 === 0 ? "text-right" : "text-left"
+            }`}
+          >
+            <h2 className="timeline-year text-center">{time.year}</h2>
             {time.image ? (
               <img
                 className="img-fluid mb-3"
@@ -68,7 +72,12 @@ const Timeline = (props) => {
     });
   };
 
-  return <div className="timeline">{renderTimelineTree()}</div>;
+  return (
+    <React.Fragment>
+      <h5 className="career-heading">My Career</h5>
+      <div className="timeline">{renderTimelineTree()}</div>
+    </React.Fragment>
+  );
 };
 
 export default Timeline;
