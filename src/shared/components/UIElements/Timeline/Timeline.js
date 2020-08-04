@@ -73,10 +73,10 @@ const Timeline = (props) => {
   };
 
   return (
-    <React.Fragment>
-      <h5 className="career-heading">My Career</h5>
+    <div id="timeline-container">
+      <h5 className="section-heading">My Career</h5>
       <div className="timeline">{renderTimelineTree()}</div>
-    </React.Fragment>
+    </div>
   );
 };
 

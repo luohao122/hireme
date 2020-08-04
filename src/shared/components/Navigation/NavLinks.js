@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import classes from "./NavLinks.module.css";
+import { smoothScroll } from "../../../helpers/util";
 
 const NavLinks = (props) => {
   return (
@@ -17,7 +18,12 @@ const NavLinks = (props) => {
         </NavLink>
       </li>
       <li>
-        <NavLink to="/portfolio" exact activeClassName={classes.NavLinkActive}>
+        <NavLink
+          to="/portfolio"
+          exact
+          activeClassName={classes.NavLinkActive}
+          onClick={() => smoothScroll("#timeline-container")}
+        >
           Portfolio
         </NavLink>
       </li>

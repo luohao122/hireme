@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import MainNavigation from "./shared/components/Navigation/MainNavigation";
 import ProfileResume from "./about/components/ProfileResume";
+import ProfileEducation from "./about/components/ProfileEducation";
 import About from "./about/pages/About";
 import Contact from "./contact/pages/Contact";
 import Skills from "./skills/pages/Skils";
@@ -24,13 +25,14 @@ const App = () => {
               <Skills />
             </Route>
             <Route path="/portfolio" exact>
-              <Skills />
+              <About />
             </Route>
             <Route path="/contact" exact>
               <Contact />
             </Route>
           </Switch>
           <ProfileResume />
+          <ProfileEducation />
         </div>
         <Timeline />
       </main>

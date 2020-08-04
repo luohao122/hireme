@@ -21,6 +21,12 @@ code {
     monospace;
 }
 
+.section-heading {
+  color: #3d4451;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
 .slide-in-left-enter {
   transform: translateX(-100%);
 }

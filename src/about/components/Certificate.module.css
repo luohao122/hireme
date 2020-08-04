@@ -1,0 +1,46 @@
+.CertificateCard {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border-width: 5px 0 0 0;
+  border-style: solid;
+  border-color: #e8676b;
+  margin: 10px;
+  max-width: 400px;
+  min-height: 220px;
+  padding: 30px 20px;
+  text-align: left;
+}
+
+.CertificateTimeLine {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.CertificateTimeLine h6 {
+  color: #e8676b;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.CertificateTimeLine i {
+  color: #e8676b;
+  font-size: 30px;
+}
+
+.CertificateName {
+  color: #414141;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.CertificateSource {
+  color: #878787;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
