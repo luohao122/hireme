@@ -44,3 +44,15 @@
   line-height: 1.1;
   text-transform: uppercase;
 }
+
+@media (max-width: 990px) {
+  .CertificateCard {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 580px) {
+  .CertificateName {
+    font-size: 18px;
+  }
+}

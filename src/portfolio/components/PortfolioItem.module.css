@@ -1,0 +1,124 @@
+.PortfolioItem {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.PortfolioHero {
+  height: 570px;
+  margin-right: 20px;
+  width: 600px;
+}
+
+.PortfolioHero:hover {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/stayjapan.png") !important;
+}
+
+.PortfolioSideBox {
+  height: 274px;
+  width: 310px;
+}
+
+.PortfolioSideBox:nth-child(2) {
+  margin-top: 21px;
+}
+
+.PortfolioItemBox {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.PortfolioItemBox:hover .PortfolioCTAGroup {
+  opacity: 1;
+}
+
+.PortfolioItemBox:hover .PortfolioActionButton {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0);
+}
+
+.PortfolioItemBox:hover .FaEyes {
+  transition-delay: 0.1s;
+}
+
+.PortfolioItemBox:hover .FaLink {
+  transition-delay: 0.2s;
+}
+
+.PortfolioCTAGroup {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 5px 12px;
+  text-align: left;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}
+
+.PortfolioCTAGroup h5 {
+  color: #fff;
+  padding: 0 5px;
+}
+
+.PortfolioActionButton {
+  background-color: #e8676b;
+  border: 1px solid #e8676b;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  height: 50px;
+  line-height: 46px;
+  margin: 0 5px;
+  opacity: 0;
+  visibility: hidden;
+  vertical-align: middle;
+  text-align: center;
+  transform: translate(0, 100px);
+  transition: all 0.2s ease-out;
+  width: 50px;
+}
+
+.PortfolioActionButton i {
+  color: #fff;
+}
+
+@media (max-width: 990px) {
+  .PortfolioItemBox {
+    height: 274px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 64%;
+  }
+
+  .PortfolioCTAGroup {
+    opacity: 1;
+  }
+
+  .PortfolioCTAGroup h5 {
+    display: none;
+  }
+
+  .PortfolioActionButton {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .PortfolioItemBox {
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .PortfolioItemBox:nth-child(2) {
+    margin-bottom: 0;
+  }
+}
