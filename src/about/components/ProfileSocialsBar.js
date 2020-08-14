@@ -1,32 +1,23 @@
 import React from "react";
 import IconList from "../../shared/components/UIElements/IconList/IconList";
 import IconListItem from "../../shared/components/UIElements/IconList/IconListItem";
+import { socialInfo } from "../../shared/data/socialInfo";
 
 const ProfileSocialsBar = (props) => {
-  return (
-    <IconList>
-      <IconListItem
-        size="large"
-        href="https://www.linkedin.com/in/jake-luong-b710ba153/"
-        iconClass="fab fa-linkedin"
-      />
-      <IconListItem
-        size="large"
-        href="https://github.com/luohao122"
-        iconClass="fab fa-github"
-      />
-      <IconListItem
-        size="large"
-        href="https://www.hackerrank.com/luohao937"
-        iconClass="fab fa-hackerrank"
-      />
-      <IconListItem
-        size="large"
-        href="https://www.facebook.com/"
-        iconClass="fab fa-facebook-f"
-      />
-    </IconList>
-  );
+  const renderSocialInfo = () => {
+    return socialInfo.map((info) => {
+      return (
+        <IconListItem
+          key={info.id}
+          size="large"
+          href={info.link}
+          iconClass={info.icon}
+        />
+      );
+    });
+  };
+
+  return <IconList>{renderSocialInfo()}</IconList>;
 };
 
 export default ProfileSocialsBar;

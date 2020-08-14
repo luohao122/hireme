@@ -1,0 +1,58 @@
+export const certificateData = [
+  {
+    id: `u1-${new Date().toISOString()}`,
+    year: "July 27, 2020",
+    name: "Flutter & Dart - The Complete Guide",
+    academy: "Udemy",
+    link: "",
+  },
+  {
+    id: `u2-${new Date().toISOString()}`,
+    year: "June 17, 2020",
+    name: "React - The Complete Guide (inc Hooks, Redux, React Router)",
+    academy: "Udemy",
+    link: "",
+  },
+  {
+    id: `u3-${new Date().toISOString()}`,
+    year: "July 14, 2020",
+    name: "MongoDB - The Complete Guide 2020",
+    academy: "Udemy",
+    link: "",
+  },
+  {
+    id: `u4-${new Date().toISOString()}`,
+    year: "July 7, 2020",
+    name: "The MERN Fullstack Guide",
+    academy: "Udemy",
+    link: "",
+  },
+  {
+    id: `u5-${new Date().toISOString()}`,
+    year: "June 30, 2020",
+    name: "NodeJS - The Complete Guide (REST APIS, GraphQL, Deno)",
+    academy: "Udemy",
+    link: "",
+  },
+  {
+    id: `u6-${new Date().toISOString()}`,
+    year: "April 19, 2020",
+    name: "Advanced React and Redux",
+    academy: "Udemy",
+    link: "",
+  },
+  {
+    id: `u7-${new Date().toISOString()}`,
+    year: "April 10, 2020",
+    name: "Modern React with Redux",
+    academy: "Udemy",
+    link: "",
+  },
+  {
+    id: `u8-${new Date().toISOString()}`,
+    year: "April 1, 2020",
+    name: "The Modern Javascript Bootcamp",
+    academy: "Udemy",
+    link: "",
+  },
+];

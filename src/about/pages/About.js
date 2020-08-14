@@ -13,6 +13,9 @@ const About = (props) => {
 
   useEffect(() => {
     setShowAbout(true);
+    return () => {
+      setShowAbout(false);
+    };
   }, []);
 
   return (
@@ -29,7 +32,7 @@ const About = (props) => {
             <div className="row">
               <div className="col-sm-5">
                 <Avatar
-                  imageUrl="https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/11/startuper-1.jpg"
+                  imageUrl="/jake.jpg"
                   title="profile-avatar"
                   alt="profile-avatar"
                 />

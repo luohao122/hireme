@@ -9,6 +9,7 @@ import Logo from "../UIElements/Logo/Logo";
 import Avatar from "../UIElements/Avatar/Avatar";
 import IconList from "../UIElements/IconList/IconList";
 import IconListItem from "../UIElements/IconList/IconListItem";
+import { socialInfo } from "../../data/socialInfo";
 
 import classes from "./MainNavigation.module.css";
 
@@ -21,6 +22,20 @@ const MainNavigation = (props) => {
 
   const closeDrawerHandler = () => {
     setDrawerIsOpen(false);
+  };
+
+  const renderSocialInfo = () => {
+    return socialInfo.map((info) => {
+      return (
+        <IconListItem
+          key={info.id}
+          color="primary"
+          size="large"
+          href={info.link}
+          iconClass={info.icon}
+        />
+      );
+    });
   };
 
   return (
@@ -40,24 +55,7 @@ const MainNavigation = (props) => {
         />
         <Logo />
         <IconList isTransparent isCentered>
-          <IconListItem
-            color="primary"
-            size="large"
-            href="https://www.linkedin.com/in/jake-luong-b710ba153/"
-            iconClass="fab fa-linkedin"
-          />
-          <IconListItem
-            color="primary"
-            size="large"
-            href="https://github.com/luohao122"
-            iconClass="fab fa-github"
-          />
-          <IconListItem
-            color="primary"
-            size="large"
-            href="https://www.hackerrank.com/luohao937"
-            iconClass="fab fa-hackerrank"
-          />
+          {renderSocialInfo()}
         </IconList>
         <nav className={classes.MainHeaderDrawerNav}>
           <NavLinks />

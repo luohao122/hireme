@@ -11,6 +11,10 @@ const Contact = (props) => {
 
   useEffect(() => {
     setShowContact(true);
+
+    return () => {
+      setShowContact(false);
+    };
   }, []);
 
   return (

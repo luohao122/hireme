@@ -73,7 +73,7 @@ const Timeline = (props) => {
   };
 
   return (
-    <div id="timeline-container">
+    <div id="career">
       <h5 className="section-heading">My Career</h5>
       <div className="timeline">{renderTimelineTree()}</div>
     </div>

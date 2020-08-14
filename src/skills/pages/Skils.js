@@ -11,6 +11,10 @@ const Skills = (props) => {
 
   useEffect(() => {
     setShowSkills(true);
+
+    return () => {
+      setShowSkills(false);
+    };
   }, []);
 
   return (

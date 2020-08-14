@@ -8,12 +8,22 @@ const NavLinks = (props) => {
   return (
     <ul className={`${classes.NavLinks} d-flex list-unstyled`}>
       <li>
-        <NavLink to="/" exact activeClassName={classes.NavLinkActive}>
+        <NavLink
+          to="/"
+          exact
+          activeClassName={classes.NavLinkActive}
+          onClick={() => smoothScroll("#about")}
+        >
           About
         </NavLink>
       </li>
       <li>
-        <NavLink to="/skills" exact activeClassName={classes.NavLinkActive}>
+        <NavLink
+          to="/skills"
+          exact
+          activeClassName={classes.NavLinkActive}
+          onClick={() => smoothScroll("#skills")}
+        >
           Skills
         </NavLink>
       </li>
@@ -22,14 +32,29 @@ const NavLinks = (props) => {
           to="/portfolio"
           exact
           activeClassName={classes.NavLinkActive}
-          onClick={() => smoothScroll("#timeline-container")}
+          onClick={() => smoothScroll("#portfolio")}
         >
           Portfolio
         </NavLink>
       </li>
       <li>
-        <NavLink to="/contact" exact activeClassName={classes.NavLinkActive}>
-          Contact
+        <NavLink
+          to="/career"
+          exact
+          activeClassName={classes.NavLinkActive}
+          onClick={() => smoothScroll("#career")}
+        >
+          My Career
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/certificates"
+          exact
+          activeClassName={classes.NavLinkActive}
+          onClick={() => smoothScroll("#certificates")}
+        >
+          Certificates
         </NavLink>
       </li>
     </ul>

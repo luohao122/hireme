@@ -5,7 +5,7 @@ import PortfolioItem from "../components/PortfolioItem";
 
 const Portfolio = (props) => {
   return (
-    <div className={classes.Portfolio}>
+    <div id="portfolio" className={classes.Portfolio}>
       <h5 className="section-heading">Portfolio</h5>
       <div className={classes.PortfolioGridContainer}>
         <div>
