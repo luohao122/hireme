@@ -8,13 +8,13 @@
   width: 600px;
 }
 
-.PortfolioHero:hover {
+/* .PortfolioHero:hover {
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.2),
       rgba(0, 0, 0, 0.4)
     ),
-    url("/stayjapan.png") !important;
-}
+    url("/assets/images/stayjapan.png") !important;
+} */
 
 .PortfolioSideBox {
   height: 274px;
@@ -32,6 +32,10 @@
 }
 
 .PortfolioItemBox:hover .PortfolioCTAGroup {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.2),
+    rgba(0, 0, 0, 0.4)
+  );
   opacity: 1;
 }
 
@@ -51,17 +55,18 @@
 
 .PortfolioCTAGroup {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 0;
   right: 0;
-  padding: 5px 12px;
+  padding: 10px 12px;
   text-align: left;
   opacity: 0;
   transition: all 0.2s ease-out;
 }
 
 .PortfolioCTAGroup h5 {
-  color: #fff;
+  color: #212529;
+  font-weight: bold;
   padding: 0 5px;
 }
 

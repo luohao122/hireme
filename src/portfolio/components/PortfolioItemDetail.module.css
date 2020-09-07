@@ -1,0 +1,60 @@
+.PortfolioDetailImgBox {
+  text-align: center;
+  background-color: #eee;
+}
+
+.PortfolioDetailImg {
+  height: 450px;
+  max-width: 100%;
+  padding: 2rem 1rem;
+}
+
+.PortfolioDetailHeading {
+  border-bottom: 1px solid #eee;
+}
+
+.PortfolioDetailHeading h3 {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.PortfolioDetailHeading,
+.PortfolioProjectInfo,
+.PortfolioProjectDesc {
+  margin: 0 1.25rem;
+  padding: 1.5rem 0;
+}
+
+.PortfolioProjectRow {
+  display: flex;
+  line-height: 2;
+}
+
+.PortfolioProjectRow span:first-child {
+  font-weight: 500;
+  width: 24%;
+}
+
+.PortfolioProjectRow span:last-child {
+  color: #969aa1;
+  width: 76%;
+}
+
+.PortfolioProjectRow a {
+  color: #e8676b;
+  text-decoration: none;
+}
+
+.PortfolioCloseButton {
+  background: transparent;
+  border: 0;
+  color: #eee;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -10px;
+  right: -32px;
+}
+
+.PortfolioCloseButton:focus {
+  outline: none;
+}

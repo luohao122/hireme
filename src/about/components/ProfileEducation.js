@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import classes from "./ProfileEducation.module.css";
 import Certificate from "./Certificate";
-import { certificateData } from "../../shared/data/certificate";
+import { CertificateContext } from "../../shared/context/certificate-context";
 
 const ProfileEducation = (props) => {
+  const { certificates } = useContext(CertificateContext);
+
   const renderCertificates = () => {
-    return certificateData.map((certificate) => {
+    return certificates.map((certificate) => {
       return (
         <div className="col-lg-4 col-sm-6" key={certificate.id}>
           <Certificate

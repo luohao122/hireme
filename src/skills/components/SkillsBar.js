@@ -2,7 +2,7 @@ import React from "react";
 
 import IconList from "../../shared/components/UIElements/IconList/IconList";
 import IconListItem from "../../shared/components/UIElements/IconList/IconListItem";
-import { iconList } from "../../shared/data/iconList";
+import { iconList } from "../../shared/models/iconList";
 
 const SkillsBar = (props) => {
   const renderIconListItem = () => {

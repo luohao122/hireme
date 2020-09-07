@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
 import MainHeader from "./MainHeader";
 import Hero from "../../components/UIElements/Hero/Hero";
@@ -9,12 +9,13 @@ import Logo from "../UIElements/Logo/Logo";
 import Avatar from "../UIElements/Avatar/Avatar";
 import IconList from "../UIElements/IconList/IconList";
 import IconListItem from "../UIElements/IconList/IconListItem";
-import { socialInfo } from "../../data/socialInfo";
-
+import { ProfileContext } from "../../context/profile-context";
+import ProfileImg from "../../../assets/images/jake.jpg";
 import classes from "./MainNavigation.module.css";
 
 const MainNavigation = (props) => {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
+  const { profile } = useContext(ProfileContext);
 
   const openDrawerHandler = () => {
     setDrawerIsOpen(true);
@@ -25,7 +26,7 @@ const MainNavigation = (props) => {
   };
 
   const renderSocialInfo = () => {
-    return socialInfo.map((info) => {
+    return profile.map((info) => {
       return (
         <IconListItem
           key={info.id}
@@ -49,7 +50,7 @@ const MainNavigation = (props) => {
           <i className="fal fa fa-times"></i>
         </button>
         <Avatar
-          imageUrl="https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/11/startuper-1.jpg"
+          imageUrl={ProfileImg}
           title="profile-avatar"
           alt="profile-avatar"
         />

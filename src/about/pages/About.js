@@ -7,6 +7,7 @@ import ProfileList from "../components/ProfileList";
 import ProfileSocialsBar from "../components/ProfileSocialsBar";
 import Avatar from "../../shared/components/UIElements/Avatar/Avatar";
 import classes from "./About.module.css";
+import ProfileImg from "../../assets/images/jake.jpg";
 
 const About = (props) => {
   const [showAbout, setShowAbout] = useState(false);
@@ -32,7 +33,7 @@ const About = (props) => {
             <div className="row">
               <div className="col-sm-5">
                 <Avatar
-                  imageUrl="/jake.jpg"
+                  imageUrl={ProfileImg}
                   title="profile-avatar"
                   alt="profile-avatar"
                 />

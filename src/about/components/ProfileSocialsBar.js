@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import IconList from "../../shared/components/UIElements/IconList/IconList";
 import IconListItem from "../../shared/components/UIElements/IconList/IconListItem";
-import { socialInfo } from "../../shared/data/socialInfo";
+import { ProfileContext } from "../../shared/context/profile-context";
 
 const ProfileSocialsBar = (props) => {
+  const { profile } = useContext(ProfileContext);
   const renderSocialInfo = () => {
-    return socialInfo.map((info) => {
+    return profile.map((info) => {
       return (
         <IconListItem
           key={info.id}

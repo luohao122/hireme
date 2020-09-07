@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
 import "./timeline.css";
+import SezaxImage from "../../../../assets/images/sezax.jpg";
+import RubifyImage from "../../../../assets/images/rubify.png";
+import HyakusenImage from "../../../../assets/images/hyakusen.png";
 
 const Timeline = (props) => {
   const [timeline] = useState([
@@ -13,7 +16,7 @@ const Timeline = (props) => {
         "A traditional printing company in Japan. Sezax Corporation was founded in 1948.",
       job_summary:
         "I joined Sezax as a mid level front end engineer and has been working on ImageStore project, which is a content management system just like Google Drive ever since.",
-      image: "/sezax.jpg",
+      image: SezaxImage,
     },
     {
       id: 2,
@@ -24,7 +27,7 @@ const Timeline = (props) => {
         "Hyakusenrenma is a Japanese company with stayjapan.com is its main business.",
       job_summary:
         "I joined Hyakusenrenma as a junior front end developer and working closely on their project (StayJapan) which is an online home-sharing service.",
-      image: "/hyakusen.png",
+      image: HyakusenImage,
     },
     {
       id: 3,
@@ -35,7 +38,7 @@ const Timeline = (props) => {
         "Rubify is an outsourcing company which provided not only good solutions, but great UI/UX to many of its customers.",
       job_summary:
         "I started there as a Fullstack developer after graduated and worked on YeyeahDelight project, which is an online food ordering service.",
-      image: "/rubify.png",
+      image: RubifyImage,
     },
   ]);
 
