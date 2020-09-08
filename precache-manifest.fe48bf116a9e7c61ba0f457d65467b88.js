@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "31277d0a02cea508125dde8086109d84",
+    "revision": "94b2e84926c789c0e1855b993e431f58",
     "url": "/hireme/index.html"
   },
   {
-    "revision": "5fa8f2a62b664e074791",
-    "url": "/hireme/static/css/main.8e7afd58.chunk.css"
+    "revision": "70339b55464beee6ab96",
+    "url": "/hireme/static/css/main.2543b086.chunk.css"
   },
   {
-    "revision": "64074df5a4d7df7fc045",
-    "url": "/hireme/static/js/2.99a09813.chunk.js"
+    "revision": "739b754a962f7c17d212",
+    "url": "/hireme/static/js/2.1be1467b.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/hireme/static/js/2.99a09813.chunk.js.LICENSE.txt"
+    "url": "/hireme/static/js/2.1be1467b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5fa8f2a62b664e074791",
-    "url": "/hireme/static/js/main.cbad5919.chunk.js"
+    "revision": "70339b55464beee6ab96",
+    "url": "/hireme/static/js/main.49469289.chunk.js"
   },
   {
     "revision": "a557628c158a5bc74e0f",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b4d50e9bea1f864891d8db9657c6637b",
     "url": "/hireme/static/media/annie.b4d50e9b.png"
+  },
+  {
+    "revision": "e1314cf3479d225c03362b91443dcc2f",
+    "url": "/hireme/static/media/header-bg.e1314cf3.jpg"
   },
   {
     "revision": "69529ea9663a7d6356d7b3f993c15f39",
