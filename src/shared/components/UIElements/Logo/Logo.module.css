@@ -1,9 +1,20 @@
 .Logo {
   color: #fff;
+  width: 30%;
 }
 
 .Logo a {
   color: #fff;
 }
 
+@media (min-width: 991px) {
+  .Logo {
+    width: auto;
+  }
+}
 
+@media (max-width: 767px) {
+  .Logo {
+    width: auto;
+  }
+}

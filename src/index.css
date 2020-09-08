@@ -21,6 +21,10 @@ code {
     monospace;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .section-heading {
   color: #3d4451;
   font-size: 30px;

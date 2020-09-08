@@ -31,14 +31,14 @@ const About = (props) => {
         <Card id="about">
           <div className={classes.AboutBox}>
             <div className="row">
-              <div className="col-sm-5">
+              <div className="col-md-5">
                 <Avatar
                   imageUrl={ProfileImg}
                   title="profile-avatar"
                   alt="profile-avatar"
                 />
               </div>
-              <div className="col-sm-7">
+              <div className="col-md-7">
                 <ProfileInfo />
                 <ProfileList />
               </div>

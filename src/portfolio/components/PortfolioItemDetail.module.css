@@ -47,15 +47,24 @@
 
 .PortfolioCloseButton {
   background: transparent;
-  border: 1px solid;
-  color: #eee;
+  border: 1px solid transparent;
+  color: #e8676b;
   font-size: 1.5rem;
   position: absolute;
-  top: 0;
-  right: -54px;
+  top: 1px;
+  right: 0;
   width: 40px;
 }
 
 .PortfolioCloseButton:focus {
   outline: none;
 }
+
+/* @media (min-width: 920px) {
+  .PortfolioCloseButton {
+    border: 1px solid;
+    color: #eee;
+    right: -54px;
+    top: 0px;
+  }
+} */

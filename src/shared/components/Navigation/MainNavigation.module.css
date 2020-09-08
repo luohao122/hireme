@@ -29,6 +29,7 @@
 
 .MainNavigationHeaderNav {
   display: none;
+  width: 70%;
 }
 
 .MainHeaderDrawerNav {
@@ -43,14 +44,20 @@
   background-color: #ff4f55;
   color: white;
   font-size: 24px;
-  position: absolute;
-  right: -49px;
+  position: fixed;
+  right: 0;
   width: 50px;
   height: 50px;
   line-height: 50px;
   align-items: center;
   justify-content: center;
   display: flex;
+}
+
+@media (min-width: 991px) {
+  .MainNavigationHeaderNav {
+    width: auto;
+  }
 }
 
 @media (min-width: 768px) {

@@ -19,10 +19,12 @@ const MainNavigation = (props) => {
 
   const openDrawerHandler = () => {
     setDrawerIsOpen(true);
+    // document.querySelector("body").classList.add("noscroll");
   };
 
   const closeDrawerHandler = () => {
     setDrawerIsOpen(false);
+    // document.querySelector("body").classList.remove("noscroll");
   };
 
   const renderSocialInfo = () => {
@@ -42,7 +44,11 @@ const MainNavigation = (props) => {
   return (
     <React.Fragment>
       {drawerIsOpen && <Backdrop onClick={closeDrawerHandler} />}
-      <SideDrawer show={drawerIsOpen} onClick={closeDrawerHandler}>
+      <SideDrawer
+        show={drawerIsOpen}
+        onClick={closeDrawerHandler}
+        onResize={closeDrawerHandler}
+      >
         <button
           className={classes.SideDrawerCloseButton}
           onClick={closeDrawerHandler}

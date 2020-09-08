@@ -1,22 +1,21 @@
 .custom-modal {
-  z-index: 100;
-  position: fixed;
-  top: 4vh;
-  left: 10%;
-  width: 80%;
   background: white;
   box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.26);
-}
-
-.modal__content {
-  /* padding: 1rem 0.5rem; */
+  bottom: 0;
+  left: 10%;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 4vh;
+  z-index: 100;
+  width: 80%;
 }
 
 .modal__footer {
   padding: 1rem 0.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .custom-modal {
     left: calc(47% - 20rem);
     width: 45rem;

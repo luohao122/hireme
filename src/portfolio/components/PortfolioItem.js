@@ -1,30 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
 
 import classes from "./PortfolioItem.module.css";
 import Modal from "../../shared/components/UIElements/Modal/Modal";
 import PortfolioItemDetail from "./PortfolioItemDetail";
+import { useModal } from "../../shared/hooks/modal-hook";
 
 const PortfolioItem = (props) => {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, openModalHandler, closeModalHandler] = useModal();
 
-  const showModalHandler = () => setShowModal(true);
+  const onShowModalHandler = () => {
+    openModalHandler();
+  };
 
-  const closeModalHandler = () => setShowModal(false);
+  const onCloseModalHandler = () => {
+    closeModalHandler();
+  };
 
   const renderButton = () => {
     return (
       <React.Fragment>
         <Modal
           show={showModal}
-          onCancel={closeModalHandler}
+          onCancel={onCloseModalHandler}
           header={props.name}
         >
-          <PortfolioItemDetail {...props} onCloseDetail={closeModalHandler} />
+          <PortfolioItemDetail {...props} onCloseDetail={onCloseModalHandler} />
         </Modal>
         <button
           className={`${classes.PortfolioActionButton} ${classes.FaEyes}`}
           type="button"
-          onClick={() => showModalHandler(props.id)}
+          onClick={onShowModalHandler}
         >
           <i className="fas fa-eye"></i>
         </button>

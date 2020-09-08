@@ -1,8 +1,11 @@
 .SideDrawer {
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  bottom: 0;
   height: 100vh;
   left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
   position: fixed;
   top: 0;
   width: 70%;
