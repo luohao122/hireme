@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94b2e84926c789c0e1855b993e431f58",
+    "revision": "0a1a6d890de5593201355280f481ec42",
     "url": "/hireme/index.html"
   },
   {
-    "revision": "70339b55464beee6ab96",
-    "url": "/hireme/static/css/main.2543b086.chunk.css"
+    "revision": "49ba26be8220d9835c3d",
+    "url": "/hireme/static/css/main.05ab2c01.chunk.css"
   },
   {
     "revision": "739b754a962f7c17d212",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hireme/static/js/2.1be1467b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "70339b55464beee6ab96",
+    "revision": "49ba26be8220d9835c3d",
     "url": "/hireme/static/js/main.49469289.chunk.js"
   },
   {

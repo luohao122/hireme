@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hireme/static/css/main.2543b086.chunk.css",
+    "main.css": "/hireme/static/css/main.05ab2c01.chunk.css",
     "main.js": "/hireme/static/js/main.49469289.chunk.js",
     "main.js.map": "/hireme/static/js/main.49469289.chunk.js.map",
     "runtime-main.js": "/hireme/static/js/runtime-main.e2341bd4.js",
@@ -8,9 +8,9 @@
     "static/js/2.1be1467b.chunk.js": "/hireme/static/js/2.1be1467b.chunk.js",
     "static/js/2.1be1467b.chunk.js.map": "/hireme/static/js/2.1be1467b.chunk.js.map",
     "index.html": "/hireme/index.html",
-    "precache-manifest.fe48bf116a9e7c61ba0f457d65467b88.js": "/hireme/precache-manifest.fe48bf116a9e7c61ba0f457d65467b88.js",
+    "precache-manifest.02ceb52460de1754407fc5ec0cee5193.js": "/hireme/precache-manifest.02ceb52460de1754407fc5ec0cee5193.js",
     "service-worker.js": "/hireme/service-worker.js",
-    "static/css/main.2543b086.chunk.css.map": "/hireme/static/css/main.2543b086.chunk.css.map",
+    "static/css/main.05ab2c01.chunk.css.map": "/hireme/static/css/main.05ab2c01.chunk.css.map",
     "static/js/2.1be1467b.chunk.js.LICENSE.txt": "/hireme/static/js/2.1be1467b.chunk.js.LICENSE.txt",
     "static/media/annie.png": "/hireme/static/media/annie.b4d50e9b.png",
     "static/media/header-bg.jpg": "/hireme/static/media/header-bg.e1314cf3.jpg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.e2341bd4.js",
     "static/js/2.1be1467b.chunk.js",
-    "static/css/main.2543b086.chunk.css",
+    "static/css/main.05ab2c01.chunk.css",
     "static/js/main.49469289.chunk.js"
   ]
 }
