@@ -4,7 +4,7 @@
 
 .ProfileListTitle {
   display: block;
-  width: 120px;
+  width: 100%;
   float: left;
   color: #333333;
   font-size: 12px;
@@ -14,7 +14,7 @@
 }
 .ProfileListContent {
   display: block;
-  margin-left: 125px;
+  margin-left: 0;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -23,11 +23,26 @@
 
 .ProfileList .Tag {
   background-color: #e8676b;
+  border-radius: 3px;
   color: #fff;
   font-weight: 700;
   font-size: 12px;
   line-height: 1;
+  margin-bottom: 0.75rem;
   padding: 5px 8px;
   display: inline-block;
-  border-radius: 3px;
+}
+
+@media (min-width: 521px) {
+  .ProfileListTitle {
+    width: 120px;
+  }
+
+  .ProfileListContent {
+    margin-left: 125px;
+  }
+
+  .ProfileList .Tag {
+    margin-bottom: 0;
+  }
 }

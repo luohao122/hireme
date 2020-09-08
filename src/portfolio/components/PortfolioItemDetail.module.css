@@ -27,17 +27,18 @@
 
 .PortfolioProjectRow {
   display: flex;
+  flex-direction: column;
   line-height: 2;
 }
 
 .PortfolioProjectRow span:first-child {
   font-weight: 500;
-  width: 24%;
+  width: 100%;
 }
 
 .PortfolioProjectRow span:last-child {
   color: #969aa1;
-  width: 76%;
+  width: 100%;
 }
 
 .PortfolioProjectRow a {
@@ -60,11 +61,22 @@
   outline: none;
 }
 
-/* @media (min-width: 920px) {
-  .PortfolioCloseButton {
+@media (min-width: 768px) {
+  /* .PortfolioCloseButton {
     border: 1px solid;
     color: #eee;
     right: -54px;
     top: 0px;
+  } */
+  .PortfolioProjectRow {
+    flex-direction: row;
   }
-} */
+
+  .PortfolioProjectRow span:first-child {
+    width: 24%;
+  }
+
+  .PortfolioProjectRow span:last-child {
+    width: 76%;
+  }
+}
