@@ -18,3 +18,9 @@
     width: auto;
   }
 }
+
+@media (max-width: 330px) {
+  .Logo p {
+    font-size: 14px !important;
+  }
+}
