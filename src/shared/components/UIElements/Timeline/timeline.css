@@ -7,6 +7,7 @@
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -51,8 +52,8 @@
 
 /* Place the container to the right */
 .timeline-right {
+  right: -50%;
   animation: slideInRight 1s ease-in-out;
-  left: 50%;
 }
 
 /* Add arrows to the left container (pointing right) */

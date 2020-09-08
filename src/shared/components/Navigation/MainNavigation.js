@@ -19,12 +19,10 @@ const MainNavigation = (props) => {
 
   const openDrawerHandler = () => {
     setDrawerIsOpen(true);
-    // document.querySelector("body").classList.add("noscroll");
   };
 
   const closeDrawerHandler = () => {
     setDrawerIsOpen(false);
-    // document.querySelector("body").classList.remove("noscroll");
   };
 
   const renderSocialInfo = () => {

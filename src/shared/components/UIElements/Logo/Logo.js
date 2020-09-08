@@ -7,7 +7,7 @@ const Logo = (props) => {
   return (
     <h1 className={`${classes.Logo} h4 text-center`}>
       <i className="fas fa-code mr-2"></i>
-      <Link className="text-decoration-none" to="/">
+      <Link className="text-decoration-none" to="/hireme">
         Jake Luong
       </Link>
       <p className="m-0">
