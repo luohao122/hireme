@@ -42,7 +42,7 @@ const Skills = (props) => {
           </div>
           <div className="row">
             <div className="col-sm-6">
-              <ProgressBar title="Javascript" width="75" />
+              <ProgressBar title="JavaScript" width="75" />
             </div>
             <div className="col-sm-6">
               <ProgressBar title="Responsive Website" width="80" />

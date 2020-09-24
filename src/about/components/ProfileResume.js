@@ -14,7 +14,7 @@ const ProfileResume = (props) => {
       <p>
         Hello! I'm Jake Luong. Mid Level Web Developer specializing in front end
         development. Experienced with all stages of the development cycle for
-        dynamic web projects. Well-versed in Javascript, HTML5, CSS3, Bootstrap.
+        dynamic web projects. Well-versed in JavaScript, HTML5, CSS3, Bootstrap.
       </p>
     </div>
   );

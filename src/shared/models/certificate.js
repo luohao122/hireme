@@ -51,7 +51,7 @@ export const certificateData = [
   {
     id: `u8-${new Date().toISOString()}`,
     year: "April 1, 2020",
-    name: "The Modern Javascript Bootcamp",
+    name: "The Modern JavaScript Bootcamp",
     academy: "Udemy",
     link: "",
   },
